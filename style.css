@@ -1,0 +1,157 @@
+body{
+margin:0;
+font-family:'Poppins',sans-serif;
+background:linear-gradient(to right,#ff9ecb,#ffc3e0);
+overflow-x:hidden;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+padding:15px 40px;
+background:rgba(0,0,0,0.8);
+color:white;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.oval-btn{
+padding:8px 20px;
+border-radius:30px;
+background:white;
+color:black;
+text-decoration:none;
+margin-left:10px;
+}
+
+.hero-slider{
+position:relative;
+height:100vh;
+overflow:hidden;
+}
+
+.slide-img{
+width:100%;
+height:100vh;
+object-fit:cover;
+position:absolute;
+opacity:0;
+transition:1s;
+}
+
+.hero-text{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+color:white;
+text-align:center;
+z-index:10;
+background:rgba(0,0,0,0.4);
+padding:30px;
+border-radius:20px;
+}
+
+.gold-text{
+background:linear-gradient(45deg,#d4af37,#ffd700,#fff5b7,#d4af37);
+background-size:300%;
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+animation:goldShine 4s linear infinite;
+}
+
+@keyframes goldShine{
+0%{background-position:0%}
+100%{background-position:300%}
+}
+
+section{
+padding:60px 20px;
+text-align:center;
+background:rgba(255,255,255,0.8);
+margin:40px;
+border-radius:20px;
+}
+
+.service-box{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.card{
+width:250px;
+padding:20px;
+background:rgba(255,182,193,0.4);
+backdrop-filter:blur(10px);
+border-radius:15px;
+}
+
+.gallery img{
+width:200px;
+height:150px;
+object-fit:cover;
+margin:10px;
+border-radius:10px;
+cursor:pointer;
+}
+
+#lightbox{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.8);
+display:none;
+justify-content:center;
+align-items:center;
+}
+
+#lightbox img{
+max-width:80%;
+max-height:80%;
+}
+
+.float-btn{
+position:fixed;
+right:20px;
+padding:12px;
+border-radius:50%;
+color:white;
+text-decoration:none;
+}
+
+.whatsapp{bottom:100px;background:#25D366;}
+.call{bottom:160px;background:#007bff;}
+.insta{bottom:40px;background:#e1306c;}
+
+.flower{
+position:fixed;
+top:-10px;
+animation:fall linear infinite;
+z-index:9999;
+}
+
+@keyframes fall{
+0%{transform:translateY(0) rotate(0deg);}
+100%{transform:translateY(100vh) rotate(360deg);}
+}
+
+.sparkle{
+position:absolute;
+width:5px;
+height:5px;
+background:gold;
+border-radius:50%;
+box-shadow:0 0 10px gold;
+animation:sparkleAnim 1s linear infinite;
+}
+
+@keyframes sparkleAnim{
+0%{opacity:0;transform:scale(0);}
+50%{opacity:1;transform:scale(1);}
+100%{opacity:0;transform:scale(0);}
+}

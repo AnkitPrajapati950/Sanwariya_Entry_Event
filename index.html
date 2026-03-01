@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&family=Great+Vibes&display=swap" rel="stylesheet">
+<title>Sanwariya Entry Event</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h2>Sanwariya Entry Event</h2>
+  <nav>
+    <a href="#services" class="oval-btn">Services</a>
+    <a href="#gallery" class="oval-btn">Gallery</a>
+    <a href="#contact" class="oval-btn">Contact</a>
+  </nav>
+</header>
+
+<div class="hero-slider">
+
+  <img src="image/11.jpeg" class="slide-img">
+  <img src="image/12.jpeg" class="slide-img">
+  <img src="image/13.jpeg" class="slide-img">
+  <img src="image/15.jpeg" class="slide-img">
+  <img src="image/21.jpeg" class="slide-img">
+  <img src="image/22.jpeg" class="slide-img">
+  <img src="image/23.jpeg" class="slide-img">
+  <img src="image/24.jpeg" class="slide-img">
+  <img src="image/25.jpeg" class="slide-img">
+  <img src="image/26.jpeg" class="slide-img">
+
+  <div class="hero-text">
+    <h1 class="gold-text">Sanwariya Entry Event</h1>
+    <p>Make Your Wedding Entry Grand ✨</p>
+    <button onclick="bookNow()">Book Now</button>
+  </div>
+
+</div>
+
+<section id="services">
+<h2>Our Special Services</h2>
+<div class="service-box">
+<div class="card"><h3>Bride Entry</h3><p>Royal & unforgettable wedding entry experience.</p></div>
+<div class="card"><h3>Groom Entry</h3><p>Energetic grand entry with pyro & smoke.</p></div>
+<div class="card"><h3>Pyro Effects</h3><p>Cold fireworks & spark fountains.</p></div>
+<div class="card"><h3>Smoke Effects</h3><p>Low fog dreamy stage effect.</p></div>
+</div>
+</section>
+
+<section id="gallery">
+<h2>Gallery</h2>
+<div class="gallery">
+<img src="image/11.jpeg" onclick="openLightbox(this.src)">
+<img src="image/12.jpeg" onclick="openLightbox(this.src)">
+<img src="image/13.jpeg" onclick="openLightbox(this.src)">
+<img src="image/15.jpeg" onclick="openLightbox(this.src)">
+<img src="image/21.jpeg" onclick="openLightbox(this.src)">
+<img src="image/22.jpeg" onclick="openLightbox(this.src)">
+<img src="image/23.jpeg" onclick="openLightbox(this.src)">
+<img src="image/24.jpeg" onclick="openLightbox(this.src)">
+<img src="image/25.jpeg" onclick="openLightbox(this.src)">
+<img src="image/26.jpeg" onclick="openLightbox(this.src)">
+</div>
+</section>
+
+<div id="lightbox" onclick="closeLightbox()">
+<img id="lightbox-img">
+</div>
+
+<section id="contact">
+<h2>Contact Us</h2>
+<p><strong>Ajay Chakravarti</strong></p>
+<p>📞 6268872641 | 9691286311</p>
+<p>📍 Bus Stand Suthaliya (Biaora–Rajgarh)</p>
+</section>
+
+<a href="https://wa.me/916268872641" class="float-btn whatsapp" target="_blank">💬</a>
+<a href="tel:6268872641" class="float-btn call">📞</a>
+<a href="https://instagram.com/sanwariya.entry.event2917" class="float-btn insta" target="_blank">📷</a>
+
+<script src="script.js"></script>
+</body>
+</html>
